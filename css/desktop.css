@@ -43,4 +43,88 @@
 }
                 
     /* ======================<<<SECTION HERO>>>====================== */
+        
+    /* ======================<<<SECTION ABOUT>>>====================== */
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.about-list {
+    gap: 24px;
+}
+.about-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
+.about-icon-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: rgba(244, 244, 253, 1);
+
+}
+    /* ======================<<<SECTION ABOUT>>>====================== */
+/* ======================<<<SECTION OURWORK>>>====================== */
+
+.ourwork {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.ourwork-title {
+    margin-bottom: 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+}
+.ourwork-list {
+    display: flex;
+    gap: 24px;
+}
+.ourwork-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+} 
+/* ======================<<<SECTION OURWORK>>>====================== */
+/* ======================<<<SECTION OURTEAM>>>====================== */
+.ourteam {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.ourteam-card {
+    flex-basis: calc((100% - 72px) / 4);
+    margin-bottom: 8px;
+}
+/* ======================<<<SECTION OURTEAM>>>====================== */
+/* ======================<<<SECTION CUSTOMERS>>>====================== */
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    gap: 24px;
+}
+.customers-list-item {
+    flex-basis: calc((100% - 120px) / 6);
+}
+/* ======================<<<SECTION CUSTOMERS>>>====================== */
+
+/* ======================<<<FOOTER>>>====================== */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-box {
+    margin-right: 120px;
+
+}
+.subscribe-wrapper {
+    margin-left: auto;
+}
+/* ======================<<<FOOTER>>>====================== */
 }

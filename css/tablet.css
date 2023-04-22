@@ -1,3 +1,12 @@
+@media screen and (max-width: 1157px) {
+    .ourwork {
+        display: none;
+    }
+    .about-icon-card {
+        display: none;
+        }
+
+}
 @media screen and (min-width: 768px) {
     .conteiner {
         width: 768px;
@@ -12,9 +21,7 @@
         display: none;
     }
 
-    .ourwork {
-        display: none;
-    }
+    
     /* ======================<<<HEADER>>>====================== */
 .page-header {
     padding: 0;
@@ -103,5 +110,79 @@
 }
     /* ======================<<<SECTION HERO>>>====================== */
 
+    /* ======================<<<SECTION ABOUT>>>====================== */
+
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+
+}
+.about-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
+.about-list-item:not(:last-child) {
+    margin-bottom: 0;
+
+}
+.about-list-title {
+    text-align: start;
+}
+    /* ======================<<<SECTION ABOUT>>>====================== */
+
+/* ======================<<<SECTION OURTEAM>>>====================== */
+.ourteam-conteiner {
+    padding-left: 108px;
+    padding-right: 108px;
+}
+.ourteam-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.ourteam-card {
+    flex-basis: calc((100% - 24px) / 2);
+}
+/* ======================<<<SECTION OURTEAM>>>====================== */
+/* ======================<<<SECTION CUSTOMERS>>>====================== */
+.customers-conteiner {
+    padding-left: 92px;
+    padding-right: 92px;
+}
+.customers-list {
+    column-gap: 24px;
+    }
+.customers-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
+/* ======================<<<SECTION CUSTOMERS>>>====================== */
+
+/* ======================<<<FOOTER>>>====================== */
+.footer-conteiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:baseline;
+    gap: 24px;
+    padding-left: 108px;
+}
+.footer-box {
+    text-align: start;
+    /* margin-right: 120px; */
+}
+.social-box-title {
+    text-align: start;
+}
+.footer-subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+}
+.subscribe-form-subtitle {
+    text-align: start;
+}
+.subscribe-form-input {
+    width: 264px;
+}
+/* ======================<<<FOOTER>>>====================== */
     
 }
