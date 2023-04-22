@@ -4,4 +4,43 @@
         padding-right: 15px;
         width: 1158px;
     }
+    /* ======================<<<HEADER>>>====================== */
+.nav-menu {
+    margin-left: 76px;
+}    
+.contact-info {
+    margin-left: auto;
+    font-style: normal;
+}
+
+.contacts-item:last-child {
+    margin-left: 40px;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+    /* ======================<<<HEADER>>>====================== */
+
+    /* ======================<<<SECTION HERO>>>====================== */
+.hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-desktop.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+    (min-resolution: 192dpi) and (min-width: 1158px) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bg-desktop@2x.jpg);
+    }
+}
+.hero-title {
+    margin-bottom: 48px;
+}
+                
+    /* ======================<<<SECTION HERO>>>====================== */
 }

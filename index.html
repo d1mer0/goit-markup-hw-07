@@ -34,7 +34,7 @@
 
     <!-- BURGER-BUTTON -->
         
-        <button class="mobile-menu-open js-open-menu">
+        <button type="button" class="mobile-menu-open js-open-menu">
             <svg class="mobile-menu-icon" width="32" height="22">
                 <use href="./images/icons.svg#menu-hamburger-icon"></use>
             </svg>
@@ -103,6 +103,7 @@
 
 
     </header>
+
     <!-- MAIN-CONTENT -->
 
     <main class="main">
@@ -112,6 +113,7 @@
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </section>
+
         <!-- SECTION-ABOUT -->
 
         <section class="about">
@@ -157,15 +159,35 @@
             </ul>
             </div>
         </section>
+
         <!-- SECTION OUR WORK -->
         
         <section class="ourwork">
             <div class="conteiner">
                 <h2 class="ourwork-title">What are we doing</h2>
             <ul class="ourwork-list list">
-                <li class="ourwork-list-item"><img class="ourwork-image" srcset="./images/ourwork1@2x.jpg 2x" src="./images/ourwork1.jpg" alt="Computer" width="360"></li>
-                <li class="ourwork-list-item"><img class="ourwork-image" srcset="./images/ourwork2@2x.jpg 2x" src="./images/ourwork2.jpg" alt="Screens" width="360"></li>
-                <li class="ourwork-list-item"><img class="ourwork-image" srcset="./images/ourwork3@2x.jpg 2x" src="./images/ourwork3.jpg" alt="Phone" width="360"></li>
+                <li class="ourwork-list-item">
+                    <picture>
+                        <source srcset="./images/ourwork1.webp 1x, ./images/ourwork1@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/ourwork1@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourwork-image" src="./images/ourwork1.jpg" alt="Computer" width="360">
+                    </picture>
+                </li>
+                
+                <li class="ourwork-list-item">
+                    <picture>
+                        <source srcset="./images/ourwork2.webp 1x, ./images/ourwork2@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/ourwork2@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourwork-image"  src="./images/ourwork2.jpg" alt="Screens" width="360">
+                    </picture>
+                </li>
+                <li class="ourwork-list-item">
+                    <picture>
+                        <source srcset="./images/ourwork3.webp 1x, ./images/ourwork3@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/ourwork3@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourwork-image"  src="./images/ourwork3.jpg" alt="Phone" width="360">
+                    </picture>
+                </li>
             </ul>
             </div>
 
@@ -174,12 +196,17 @@
         
         <!-- SECTION-OURTEAM -->
 
-        <section class="ourteam">
-            <div class="conteiner">
+        <section class="ourteam conteiner">
+            <div>
                 <h2 class="ourteam-title">Our Team</h2>
             <ul class="ourteam-list list">
                 <li class="ourteam-card">
-                    <img class="ourteam-list-image" srcset="./images/team1@2x.jpg 2x" src="./images/team1.jpg" alt="Men Mark" width="264">
+                    <pictures>
+                        <source srcset="./images/team1.webp 1x, ./images/team1@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/team1@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourteam-list-image"  src="./images/team1.jpg" alt="Men Mark" width="264">
+                    </pictures>
+                    
                     <div class="ourteam-card-text">
                     <h3 class="ourteam-list-title">Mark Guerrero</h3>
                     <p class="ourteam-list-text">Product Designer</p>
@@ -216,7 +243,12 @@
                     </div>
                 </li>
                 <li class="ourteam-card">
-                    <img class="ourteam-list-image" srcset="./images/team2@2x.jpg 2x" src="./images/team2.jpg" alt="Men Tom" width="264">
+                    <pictures>
+                        <source srcset="./images/team2.webp 1x, ./images/team2@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/team2@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourteam-list-image"  src="./images/team2.jpg" alt="Men Tom" width="264">
+                    </pictures>
+                    
                     <div class="ourteam-card-text">
                     <h3 class="ourteam-list-title">Tom Ford</h3>
                     <p class="ourteam-list-text">Frontend Developer</p>
@@ -253,7 +285,12 @@
                     </div>
                 </li>
                 <li class="ourteam-card">
-                    <img class="ourteam-list-image" srcset="./images/team3@2x.jpg 2x" src="./images/team3.jpg" alt="Girl Camila" width="264">
+                    <pictures>
+                        <source srcset="./images/team3.webp 1x, ./images/team3@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/team3@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourteam-list-image"  src="./images/team3.jpg" alt="Girl Camila" width="264">
+                    </pictures>
+                    
                     <div class="ourteam-card-text">
                     <h3 class="ourteam-list-title">Camila Garcia</h3>
                     <p class="ourteam-list-text">Marketing</p>
@@ -290,7 +327,12 @@
                     </div>
                 </li>
                 <li class="ourteam-card">
-                    <img class="ourteam-list-image" srcset="./images/team4@2x.jpg 2x" src="./images/team4.jpg" alt="Men Daniel" width="264">
+                    <pictures>
+                        <source srcset="./images/team4.webp 1x, ./images/team4@2x.webp 2x" type="image/webp">
+                        <source srcset="./images/team4@2x.jpg 2x" type="image/jpeg">
+                        <img class="ourteam-list-image"  src="./images/team4.jpg" alt="Men Daniel" width="264">
+                    </pictures>
+                    
                     <div class="ourteam-card-text">
                     <h3 class="ourteam-list-title">Daniel Wilson</h3>
                     <p class="ourteam-list-text">UI Designer</p>
@@ -332,8 +374,8 @@
 
         <!-- SECTION CUSTOMERS -->
 
-        <section class="customers">
-            <div class="conteiner">
+        <section class="customers conteiner">
+            <div>
                 <h2 class="customers-title">Customers</h2>
             <ul class="customers-list list">
                 <li class="customers-list-item">
@@ -435,7 +477,7 @@
                     </svg>
                     </button>
             </form>
-            </div>
+        </div>
         </div>
     </footer>
 
