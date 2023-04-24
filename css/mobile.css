@@ -276,12 +276,11 @@ body {
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
-    width: 428px;
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
 }
-@media screen and (min-width: 428px), (min-device-pixel-ratio: 2),
+@media screen and (min-width: 320px), (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -294,7 +293,7 @@ body {
     margin-left: auto;
     margin-bottom: 72px;
 
-    width: 320px;
+    max-width: 320px;
     font-weight: 700;
     font-size: 36px;
     text-align: center;
@@ -536,10 +535,11 @@ body {
 .social-link-footer:focus {
     background-color: #31D0AA;
 }
-/* .subscribe-wrapper {
-    margin: 0 auto;
-} */
+.subscribe-wrapper {
+    width: 398px;
+}
 .footer-subscribe-form {
+    max-width: 398px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -556,7 +556,7 @@ body {
 .subscribe-form-input {
 
     /* margin-right: 24px; */
-    width: 398px;
+    max-width: 398px;
     height: 40px;
     padding: 8px 16px 8px 16px;
     border: 1px solid #FFFFFF;
