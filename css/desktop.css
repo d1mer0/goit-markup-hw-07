@@ -16,6 +16,9 @@
 .contacts-item:last-child {
     margin-left: 40px;
 }
+.contacts-item:first-child {
+    margin-bottom: 0;
+}
 
 .contacts-list {
     display: flex;
@@ -64,11 +67,15 @@
     background-color: rgba(244, 244, 253, 1);
 
 }
+.about-list-title {
+    font-weight: 500;
+    font-size: 20px;
+}
     /* ======================<<<SECTION ABOUT>>>====================== */
 /* ======================<<<SECTION OURWORK>>>====================== */
 
 .ourwork {
-    padding-top: 120px;
+    
     padding-bottom: 120px;
 }
 .ourwork-title {
@@ -97,7 +104,6 @@
 
 .ourteam-card {
     flex-basis: calc((100% - 72px) / 4);
-    margin-bottom: 8px;
 }
 /* ======================<<<SECTION OURTEAM>>>====================== */
 /* ======================<<<SECTION CUSTOMERS>>>====================== */
@@ -119,12 +125,17 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+.footer-conteiner {
+    flex-wrap: nowrap;
+    gap:0;
+}
 .footer-box {
+    margin-left: 0;
     margin-right: 120px;
 
 }
 .subscribe-wrapper {
-    margin-left: auto;
+    margin-right: auto;
 }
 /* ======================<<<FOOTER>>>====================== */
 }

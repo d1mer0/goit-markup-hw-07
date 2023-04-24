@@ -59,6 +59,8 @@ body {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
     
     
 }
@@ -96,8 +98,7 @@ body {
 @media screen and (min-width: 428px) {
     .conteiner {
         width: 428px;
-        margin-left: auto;
-        margin-right: auto;
+        
         
     }
 }
@@ -148,6 +149,7 @@ body {
     
         .menu-wrapper {
             position: relative;
+            height: 100%;
             padding: 80px 40px 40px 40px;
             background-color: #ffffff;
         }
@@ -210,8 +212,11 @@ body {
         .contacts-mobile-link:focus {
             color: var(--active-color);
         }
+        .contacts-menu-list {
+            margin-bottom: 48px;
+        }
     
-        .contacts-mobile-item {
+        .contacts-mobile-item:first-child {
             margin-bottom: 40px;
         }
     
@@ -363,12 +368,16 @@ body {
 .ourteam-card {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 72px;
+    
     width: 264px;
 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--white);
+}
+.ourteam-card:not(:last-child) {
+    margin-bottom: 72px;
+
 }
 
 .social-list {
@@ -539,7 +548,7 @@ body {
     width: 100%;
 }
 .footer-subscribe-form {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;

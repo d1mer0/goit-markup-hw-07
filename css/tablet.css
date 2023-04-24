@@ -52,6 +52,12 @@
 .nav-link:focus {
     color: var(--active-color);
 }
+.contact-info {
+    font-style: normal;
+}
+.contacts-item:first-child {
+    margin-bottom: 12px;
+}
 .contacts-link {
     color: var(--primary-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,7 +109,7 @@
 }
    
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 36px;
     font-size: 56px;
     line-height: 1.07em;
@@ -139,10 +145,14 @@
 .ourteam-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
 }
 .ourteam-card {
     flex-basis: calc((100% - 24px) / 2);
+}
+.ourteam-card:not(:last-child) {
+    margin-bottom: 0;
 }
 /* ======================<<<SECTION OURTEAM>>>====================== */
 /* ======================<<<SECTION CUSTOMERS>>>====================== */
@@ -163,10 +173,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items:baseline;
-    gap: 24px;
-    padding-left: 108px;
+    column-gap: 24px;
+    row-gap: 72px;
 }
 .footer-box {
+    margin-left: 92px;
     text-align: start;
     /* margin-right: 120px; */
 }
@@ -174,9 +185,15 @@
     text-align: start;
 }
 .footer-subscribe-form {
+    
     flex-direction: row;
     gap: 24px;
 }
+.subscribe-wrapper {
+    margin-left: 92px;
+
+}
+
 .subscribe-form-subtitle {
     text-align: start;
 }
