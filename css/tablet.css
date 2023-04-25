@@ -69,8 +69,7 @@
     color: var(--active-color);
 }
 .logo-header,
-.nav-link,
-.contacts-link {
+.nav-link {
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -96,9 +95,10 @@
 
     /* ======================<<<SECTION HERO>>>====================== */
 .hero {
+    max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/hero-bg-tablet.jpg);
-            width: 768px;
+    
     }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 (min-resolution: 192dpi) and (min-width: 768px) {
@@ -170,14 +170,15 @@
 
 /* ======================<<<FOOTER>>>====================== */
 .footer-conteiner {
+    width: 600px;
     flex-direction: row;
     flex-wrap: wrap;
+
     align-items:baseline;
     column-gap: 24px;
     row-gap: 72px;
 }
 .footer-box {
-    margin-left: 92px;
     text-align: start;
     /* margin-right: 120px; */
 }
@@ -189,11 +190,6 @@
     flex-direction: row;
     gap: 24px;
 }
-.subscribe-wrapper {
-    margin-left: 92px;
-
-}
-
 .subscribe-form-subtitle {
     text-align: start;
 }
